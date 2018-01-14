@@ -55,11 +55,11 @@ class Products extends Component {
               this.products.map((product, index) =>
                 <div className="product border" key={index}>
                   <a>
-                    {/* <img className="mx-auto mb-3 d-block"></img> */}
+                    <img className="mx-auto mb-3 d-block" src={require("../assets/img/" + product.name + ".jpg")} alt={product.name}></img>
                     <div className="text-primary font-weight-bold">{product.name}</div>
                   </a>
                   <div>By: {product.brand}</div>
-                  <div>OS: {product.os1}</div>
+                  <div>OS: {product.os}</div>
                   <div>Price: {product.price}</div>
                 </div>
               )
