@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Toolbar from './Toolbar/Toolbar';
+import Products from './Products/Products';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -17,6 +18,7 @@ class App extends Component {
       // </div>
       <div>
         <Toolbar />
+        <Products />
       </div>
     );
   }
