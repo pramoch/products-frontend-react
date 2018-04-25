@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import './Products.css';
+import Service from '../service';
 
 class Products extends Component {
   constructor(props) {
     super(props);
+    this.service = Service.getInstance();
+    this.service.getAllProducts()
+      .then((products) => {
+        console.log(products);
+      });
+
     this.products = [
       {
         name: 'iPhone X 256 GB',
